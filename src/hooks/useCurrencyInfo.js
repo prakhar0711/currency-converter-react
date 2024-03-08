@@ -8,7 +8,7 @@ function useCurrencyInfo(currency) {
   useEffect(() => {
     // Fetching currency data from the API
     fetch(
-      `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
+      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`
     )
       .then((response) => response.json()) // Parsing response to JSON
       .then((response) => setData(response[currency])); // Setting data in state
